@@ -7,9 +7,11 @@ body{
     min-height:100vh;
     
 }
+*{
+    box-sizing: border-box;
+}
 :root{
     --backgrondColorTopSection:#F9FAFB;
-    box-sizing: border-box;
 }
 .div_left{
     flex-basis: 35%;
@@ -42,23 +44,20 @@ body{
     display:flex ;
     flex-direction: column;
 }
-.row{
-    display: flex;
-    flex-direction: row;
-}
+
 .top_section{
     background-color:var(--backgrondColorTopSection);
     padding-left: 40px;
     flex-basis: 30%;
     min-width: 100%;
-    font-size: x-large;
+    font-size: 25px;
     font-weight: 550;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .top_section p{
-    max-width: 60%;
+    max-width: 70%;
 }
 .bottom_section{
     min-width: 100%;
@@ -66,10 +65,6 @@ body{
     padding: 40px;
     flex-basis: 30%;
     font-size: larger;
-}
-form{
-    display: flex;
-    flex-basis: 40%;
 }
 button{
     background-color: #596D48;
@@ -98,4 +93,46 @@ button:hover{
 }
 .bottom_section a:hover{
     color: #3a562d;
+}
+form{
+    display: flex;
+    flex-basis: 40%;
+    min-width: 100%;
+    padding: 30px;
+}
+fieldset{
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+.formRow{
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+    flex-basis: 33%;
+    gap: 20px;
+    justify-content: start;
+}
+.form_control{
+    flex-basis: 50%;
+}
+input{
+    padding: 7px 14px;
+    max-width: 65%;
+    border-radius: 5px;
+    border: #E9EBEE 1px solid;
+    outline: none;
+}
+input:focus{
+    box-shadow: gray 0.5px 0.5px 2px 0.5px;
+    border-color: blue;
+}
+input:invalid{
+    border-color: red;
+    box-shadow: none;
+}
+legend{
+    font-size: 25px;
+    padding-bottom: 15px;
 }
