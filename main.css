@@ -5,12 +5,14 @@ body{
     flex-direction: row;
     min-width: 100vw;
     min-height:100vh;
+    
 }
 :root{
     --backgrondColorTopSection:#F9FAFB;
+    box-sizing: border-box;
 }
 .div_left{
-    flex-basis: 40%;
+    flex-basis: 35%;
     background-image: url("photo-1601042879364-f3947d3f9c16.avif");
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,7 +32,7 @@ body{
     margin-top: 200px;
 }
 .div_right{
-    flex-basis: 60%;
+    flex-basis: 65%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -40,11 +42,60 @@ body{
     display:flex ;
     flex-direction: column;
 }
-.button_row{
+.row{
     display: flex;
     flex-direction: row;
 }
 .top_section{
     background-color:var(--backgrondColorTopSection);
-    padding: 25px;
+    padding-left: 40px;
+    flex-basis: 30%;
+    min-width: 100%;
+    font-size: x-large;
+    font-weight: 550;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.top_section p{
+    max-width: 60%;
+}
+.bottom_section{
+    min-width: 100%;
+    background-color: var(--backgrondColorTopSection);
+    padding: 40px;
+    flex-basis: 30%;
+    font-size: larger;
+}
+form{
+    display: flex;
+    flex-basis: 40%;
+}
+button{
+    background-color: #596D48;
+    color: #EDEFEC;
+    padding: 10px 40px;
+    border-style: none;
+    border-radius: 5px;
+    font-size: medium;
+    font-weight: 550;
+    box-shadow: black 1px 1px 4px 2px;
+}
+button:hover{
+    background-color: #3a562d;
+}
+.bottom_section p{
+    font-size: medium;
+    padding-top: 10px;
+}
+.bottom_section a:link{
+    text-decoration: none;
+    color: #596D48;
+    font-weight: 550;
+}
+.bottom_section a:visited{
+    color: #596D48;
+}
+.bottom_section a:hover{
+    color: #3a562d;
 }
