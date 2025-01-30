@@ -12,6 +12,8 @@ body{
 }
 :root{
     --backgrondColorTopSection:#F9FAFB;
+    font-family: 'quantico';
+
 }
 .div_left{
     flex-basis: 35%;
@@ -28,9 +30,7 @@ body{
 }
 .logo{
     color: #FFFFFF;
-    font-size: xx-large;
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
     margin-top: 200px;
 }
 .div_right{
@@ -113,6 +113,7 @@ fieldset{
     flex-basis: 33%;
     gap: 20px;
     justify-content: start;
+    padding-top: 10px;
 }
 .form_control{
     flex-basis: 50%;
@@ -135,4 +136,31 @@ input:invalid{
 legend{
     font-size: 25px;
     padding-bottom: 15px;
+}
+.logo{
+    background-color: rgba(0,0,0, 0.4) ;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: 'norse';
+}
+img{
+    max-width: 60px;
+}
+@font-face {
+    font-family: 'norse';
+    src: url(Norsebold.otf);
+}
+h1{
+    font-size:65px ;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'quantico';
+    src: url(Quantico-Regular.ttf);
+    
 }
